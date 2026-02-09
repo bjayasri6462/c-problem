@@ -1,0 +1,15 @@
+include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=5;
+    int c=20;
+    int d= 10;
+    
+    int sum1=a-b;
+    int sum2= c-d;
+    printf("%d\n", sum1);
+    printf("%d\n", sum2);
+    return 0;
+}
+ 
