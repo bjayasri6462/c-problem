@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    char  a =  1;
+    char b = 1;
+    printf("%c\n",a);
+    printf("%c\n",b);
+
+    return 0;
+}
