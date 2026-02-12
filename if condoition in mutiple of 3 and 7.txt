@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+  int num1 ;
+  int num2 ;
+  scanf("%d %d",&num1,&num2);
+  
+  printf("%d %d",num1,num2);
+  if(num1 %3 ==0 && num2% 7 == 0){
+      printf("Multiple both  3 and 7");
+  }
+  else{
+       printf(" Not Multiple both 3 and 7");
+  }
+  
+  
+
+       
+    
+    return 0;
+}
