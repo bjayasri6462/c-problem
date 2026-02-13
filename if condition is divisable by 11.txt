@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+   scanf("%d",&num);
+   printf("%d",num);
+   if (num % 11 ==0){
+       printf(" divisable by 11");
+   }
+      
+       
+       
+      
+           else {
+               printf("not divisagle by 11");
+           }
+      return 0;
+}
