@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+   scanf("%d %d",&num);
+   printf("%d",num);
+   if (num>= 100 && num<=999){
+       printf(" three digit number");
+   }
+       else if(num>=10&&num<=99){
+       
+           printf(" two digit number ");
+       
+       }
+           else {
+               printf("four digit number");
+           }
+      return 0;
+}
