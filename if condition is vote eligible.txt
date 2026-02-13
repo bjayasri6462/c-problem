@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int Age;
+   scanf("%d",&Age);
+   printf("%d",Age);
+   if (Age>=18){
+       printf("ti is eligible");
+   }
+       else{
+           printf("not eligible");
+       }
+ 
+ 
+   
+
+
+    return 0;
+}
