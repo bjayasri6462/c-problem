@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int membership;
+    float amount, finalAmount;
+
+    scanf("%d", &membership);
+    scanf("%f", &amount);
+
+    if(membership == 1) {
+        if(amount >= 100) {
+            finalAmount = amount - (amount * 0.20);
+            printf("%.2f", finalAmount);
+        } else {
+            printf("%.2f", amount);
+        }
+    }
+    else if(membership == 0) {
+        printf("%.2f", amount);
+    }
+    else {
+        printf("invalid member details");
+    }
+
+    return 0;
+}
