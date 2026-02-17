@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    ;
+    int  n,i;
+    int units,total =0;
+    
+    
+
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        scanf("%d", &units);   // read daily expense
+        total += units;
+
+        printf("total units:%d",total);
+      
+    }
+    return 0;
+}
+
