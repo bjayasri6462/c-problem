@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n,i;
+    int marks[100];
+    
+    int sum= 0;
+    int failed = 0;
+    float average;
+    scanf("%d",&n);
+    for (int i =0;i<n;i++){
+        scanf("%d",&marks[i]);
+        sum += marks[i];
+        if(marks[i] < 40){
+          failed++;
+        }
+    }
+    average = (float)sum/n;
+    printf("Averaage score:%d\n",average);
+    printf("Failed subjects:%d\n",failed);
+        
+    return 0;
+}
