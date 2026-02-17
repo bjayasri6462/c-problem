@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n,i;
+    int loss,totalloss =0;
+    int total = 0;
+    int highlossDays = 0;
+    scanf("%d",&n);
+    for (int i =0;i<n;i++){
+        scanf("%d",&loss);
+        totalloss += loss;
+        if(loss>100){
+          highlossDays++;
+        }
+    }
+    printf("Total loss:%d\n",totalloss);
+    printf("high totalo Days:%d\n",highlossDays);
+        
+    return 0;
+}
