@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int usage;
+    int total = 0;
+    int highUsageDays = 0;
+
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &usage);
+        total += usage;
+
+        // Change condition if needed
+        if (usage >= 2) {
+            highUsageDays++;
+        }
+    }
+
+    printf("Total Data: %d\n", total);
+    printf("High usage days: %d\n", highUsageDays);
+
+    return 0;
+}
