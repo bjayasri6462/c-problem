@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int target = 95000;
+    int total = 0;
+
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        int revenue;
+        scanf("%d", &revenue);
+        total += revenue;
+    }
+
+    printf("Total revenue: %d\n", total);
+    printf("Target: %d\n", target);
+    printf("Target achieved: %s\n", total >= target ? "true" : "false");
+
+    return 0;
+}
