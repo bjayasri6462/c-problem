@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int N,i;
+    int divisor_sum = 0;
+    scanf("%d",&N);
+    for(i = 1; i < N; i++){
+        if(N % i == 0) {
+            divisor_sum += i;
+           
+        }
+    }
+    if(divisor_sum == N){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+   
+    }
+    return 0;
+}
+
