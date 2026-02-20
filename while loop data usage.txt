@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int totalData;
+    int dailyusage;
+    int days = 0;
+
+    scanf("%d", &totalData);
+    scanf("%d", &dailyusage);
+
+    if (dailyusage <= 0) {
+        printf("Invalid daily usage\n");
+        return 0;
+    }
+
+    while (totalData >= dailyusage) {
+        totalData -= dailyusage;
+        days++;
+    }
+
+    printf("Days Used:%d\n", days);
+    printf("Remaining Data:%d\n", totalData);
+
+    return 0;
+}
