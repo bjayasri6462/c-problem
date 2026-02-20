@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+    int N;
+    scanf("%d",&N);
+    int i=0;
+    int Noise =0;
+    int violations =0;
+    int currentstreak = 0;
+    int longeststreak =0;
+    
+    while(i<=N)
+    {
+        scanf("%d",&Noise);
+        if(Noise>70){
+            violations++;
+            currentstreak ++;
+            if(currentstreak > longeststreak){
+                longeststreak = currentstreak;
+            }
+        }
+            else
+        {
+        currentstreak = 0;
+    }
+    i++;
+}
+    printf("Noise violations :%d\n",violations);
+    printf("Longest violations streak:%d\n",longeststreak);
+            
+        return 0 ;
+        }
+    
