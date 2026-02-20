@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(){ 
+
+   int n,i =0;
+   int order;
+   int success= 0,cancelled = 0;
+   scanf("%d",&n);
+   while(i < n) {
+   scanf("%d",&order);
+   if(order==1){
+       success++;
+   }
+   else if (order == 0){
+       cancelled++;
+       
+   }
+       i++;
+   }
+       
+   printf("successfull:%d",success);
+   printf("cancelled:%d\n",cancelled);
+   if(cancelled>success){
+       printf("status:Risk");
+   }
+   else{
+       printf("status:safe");
+   }
+   
+   return 0;
+}
+       
